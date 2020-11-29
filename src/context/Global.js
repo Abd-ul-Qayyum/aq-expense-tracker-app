@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useReducer } from 'react';
+import React, { createContext, useReducer } from 'react';
 import AppReducer from './AppReducer'
 
 // initial state
@@ -37,6 +37,5 @@ export const GlobalProvider = ({ children }) => {
                     deleteTransaction,
                     addTransaction
                 }
-            } > { children } <
-            /GlobalContext.Provider>)
+            } > { children } < /GlobalContext.Provider>)
         }
